@@ -1,0 +1,13 @@
+---
+kind: pipeline
+name: default
+steps:
+  - name: docker-new-registry
+    image: plugins/docker
+    settings:
+      repo: ktruckenmiller/wrangler
+      tags: latest
+      username:
+        from_secret: username
+      password:
+        from_secret: password

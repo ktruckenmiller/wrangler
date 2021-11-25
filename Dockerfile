@@ -4,4 +4,4 @@
 FROM rust
 RUN cargo install wrangler && \
     apt-get update && \
-    apt-get install nodejs -y
+    apt-get install nodejs npm -y
