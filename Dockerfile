@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node
 RUN npm i @cloudflare/wrangler -g
 #
 # FROM rust
